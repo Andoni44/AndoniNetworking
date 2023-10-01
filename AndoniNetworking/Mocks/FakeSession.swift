@@ -7,15 +7,15 @@
 
 import Foundation
 
-@testable import AndoniNetworking
-
-final class FakeSession: URLSessionProtocol {
+public final class FakeSession: URLSessionProtocol {
     var data: Data?
     var fakeResponse: URLResponse?
     var error: Error?
     var generatedRequest: URLRequest?
 
-    func data(for: URLRequest) async throws -> (Data, URLResponse) {
+    public init() {}
+
+    public func data(for: URLRequest) async throws -> (Data, URLResponse) {
         if let error {
             throw error
         }

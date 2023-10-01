@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD0DD932AC9FF26007A6F8D /* ServiceFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0DD922AC9FED8007A6F8D /* ServiceFactoryMock.swift */; };
+		1FD0DD942AC9FFDF007A6F8D /* FakeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD662452AC5FE1000D0842E /* FakeDTO.swift */; };
+		1FD0DD952AC9FFDF007A6F8D /* FakeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD662422AC5FCDF00D0842E /* FakeSession.swift */; };
+		1FD0DDAC2ACA017E007A6F8D /* AndoniNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0DDAB2ACA017E007A6F8D /* AndoniNetworkingTests.swift */; };
+		1FD0DDAD2ACA017E007A6F8D /* AndoniNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD662912AC9DC7C00D0842E /* AndoniNetworking.framework */; platformFilter = ios; };
 		1FD662982AC9DC8300D0842E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31D1DE2AC1F9A900D38402 /* Endpoint.swift */; };
 		1FD662992AC9DC8500D0842E /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31D1E02AC1F9E100D38402 /* ServiceFactory.swift */; };
 		1FD6629A2AC9DC8800D0842E /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31D1D92AC1F5B600D38402 /* HTTPError.swift */; };
@@ -14,19 +19,39 @@
 		1FD6629D2AC9DD0800D0842E /* AndoniNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD6629C2AC9DD0800D0842E /* AndoniNetworking.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1FD0DDAE2ACA017E007A6F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31D1B72AC1F50E00D38402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD662902AC9DC7C00D0842E;
+			remoteInfo = AndoniNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1F31D1CD2AC1F50E00D38402 /* AndoniNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndoniNetworkingTests.swift; sourceTree = "<group>"; };
 		1F31D1D92AC1F5B600D38402 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		1F31D1DB2AC1F7B500D38402 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		1F31D1DE2AC1F9A900D38402 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1F31D1E02AC1F9E100D38402 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		1FD0DD922AC9FED8007A6F8D /* ServiceFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryMock.swift; sourceTree = "<group>"; };
+		1FD0DDA92ACA017E007A6F8D /* AndoniNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndoniNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD0DDAB2ACA017E007A6F8D /* AndoniNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndoniNetworkingTests.swift; sourceTree = "<group>"; };
 		1FD662422AC5FCDF00D0842E /* FakeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSession.swift; sourceTree = "<group>"; };
 		1FD662452AC5FE1000D0842E /* FakeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDTO.swift; sourceTree = "<group>"; };
 		1FD662912AC9DC7C00D0842E /* AndoniNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AndoniNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FD6629C2AC9DD0800D0842E /* AndoniNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndoniNetworking.h; path = AndoniNetworking/AndoniNetworking.h; sourceTree = SOURCE_ROOT; };
+		1FD6629C2AC9DD0800D0842E /* AndoniNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndoniNetworking.h; path = AndoniNetworking/Sources/AndoniNetworking.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1FD0DDA62ACA017E007A6F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD0DDAD2ACA017E007A6F8D /* AndoniNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD6628E2AC9DC7C00D0842E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				1F31D1C22AC1F50E00D38402 /* AndoniNetworking */,
-				1F31D1CC2AC1F50E00D38402 /* AndoniNetworkingTests */,
+				1FD0DDAA2ACA017E007A6F8D /* AndoniNetworkingTests */,
 				1F31D1C12AC1F50E00D38402 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				1FD662912AC9DC7C00D0842E /* AndoniNetworking.framework */,
+				1FD0DDA92ACA017E007A6F8D /* AndoniNetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,21 +83,10 @@
 		1F31D1C22AC1F50E00D38402 /* AndoniNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				1FD6629C2AC9DD0800D0842E /* AndoniNetworking.h */,
-				1F31D1DD2AC1F99F00D38402 /* Service */,
-				1F31D1D82AC1F5A000D38402 /* HTTP */,
+				1FD0DD912AC9FE15007A6F8D /* Mocks */,
+				1FD0DD902AC9FE0E007A6F8D /* Sources */,
 			);
 			path = AndoniNetworking;
-			sourceTree = "<group>";
-		};
-		1F31D1CC2AC1F50E00D38402 /* AndoniNetworkingTests */ = {
-			isa = PBXGroup;
-			children = (
-				1F31D1CD2AC1F50E00D38402 /* AndoniNetworkingTests.swift */,
-				1FD662422AC5FCDF00D0842E /* FakeSession.swift */,
-				1FD662452AC5FE1000D0842E /* FakeDTO.swift */,
-			);
-			path = AndoniNetworkingTests;
 			sourceTree = "<group>";
 		};
 		1F31D1D82AC1F5A000D38402 /* HTTP */ = {
@@ -92,6 +107,34 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		1FD0DD902AC9FE0E007A6F8D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1FD6629C2AC9DD0800D0842E /* AndoniNetworking.h */,
+				1F31D1DD2AC1F99F00D38402 /* Service */,
+				1F31D1D82AC1F5A000D38402 /* HTTP */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1FD0DD912AC9FE15007A6F8D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1FD0DD922AC9FED8007A6F8D /* ServiceFactoryMock.swift */,
+				1FD662422AC5FCDF00D0842E /* FakeSession.swift */,
+				1FD662452AC5FE1000D0842E /* FakeDTO.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1FD0DDAA2ACA017E007A6F8D /* AndoniNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FD0DDAB2ACA017E007A6F8D /* AndoniNetworkingTests.swift */,
+			);
+			path = AndoniNetworkingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -106,6 +149,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1FD0DDA82ACA017E007A6F8D /* AndoniNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD0DDB02ACA017E007A6F8D /* Build configuration list for PBXNativeTarget "AndoniNetworkingTests" */;
+			buildPhases = (
+				1FD0DDA52ACA017E007A6F8D /* Sources */,
+				1FD0DDA62ACA017E007A6F8D /* Frameworks */,
+				1FD0DDA72ACA017E007A6F8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FD0DDAF2ACA017E007A6F8D /* PBXTargetDependency */,
+			);
+			name = AndoniNetworkingTests;
+			productName = AndoniNetworkingTests;
+			productReference = 1FD0DDA92ACA017E007A6F8D /* AndoniNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1FD662902AC9DC7C00D0842E /* AndoniNetworking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FD662972AC9DC7C00D0842E /* Build configuration list for PBXNativeTarget "AndoniNetworking" */;
@@ -134,6 +195,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					1FD0DDA82ACA017E007A6F8D = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					1FD662902AC9DC7C00D0842E = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -153,11 +217,19 @@
 			projectRoot = "";
 			targets = (
 				1FD662902AC9DC7C00D0842E /* AndoniNetworking */,
+				1FD0DDA82ACA017E007A6F8D /* AndoniNetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1FD0DDA72ACA017E007A6F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD6628F2AC9DC7C00D0842E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,18 +240,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1FD0DDA52ACA017E007A6F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD0DDAC2ACA017E007A6F8D /* AndoniNetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD6628D2AC9DC7C00D0842E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD0DD932AC9FF26007A6F8D /* ServiceFactoryMock.swift in Sources */,
 				1FD6629B2AC9DC8C00D0842E /* HTTPMethod.swift in Sources */,
 				1FD662992AC9DC8500D0842E /* ServiceFactory.swift in Sources */,
 				1FD6629A2AC9DC8800D0842E /* HTTPError.swift in Sources */,
+				1FD0DD952AC9FFDF007A6F8D /* FakeSession.swift in Sources */,
+				1FD0DD942AC9FFDF007A6F8D /* FakeDTO.swift in Sources */,
 				1FD662982AC9DC8300D0842E /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FD0DDAF2ACA017E007A6F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 1FD662902AC9DC7C00D0842E /* AndoniNetworking */;
+			targetProxy = 1FD0DDAE2ACA017E007A6F8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F31D1D02AC1F50E00D38402 /* Debug */ = {
@@ -307,6 +399,38 @@
 			};
 			name = Release;
 		};
+		1FD0DDB12ACA017E007A6F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.AndoniNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FD0DDB22ACA017E007A6F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.AndoniNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1FD662952AC9DC7C00D0842E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +515,15 @@
 			buildConfigurations = (
 				1F31D1D02AC1F50E00D38402 /* Debug */,
 				1F31D1D12AC1F50E00D38402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD0DDB02ACA017E007A6F8D /* Build configuration list for PBXNativeTarget "AndoniNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD0DDB12ACA017E007A6F8D /* Debug */,
+				1FD0DDB22ACA017E007A6F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
